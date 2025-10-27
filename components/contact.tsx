@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Phone, Mail, MapPin } from "lucide-react"
 
+
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -20,7 +21,6 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     console.log("Form submitted:", formData)
-    // Handle form submission
   }
 
   return (
